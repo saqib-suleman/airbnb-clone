@@ -6,6 +6,7 @@ import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
 import { SafeUser } from "@/app/types";
+import Categories from "./Categories";
 
 type NavbarProps = {
   currentUser?: SafeUser | null;
@@ -24,6 +25,7 @@ function Navbar({currentUser}: NavbarProps) {
           </div>
         </Container>
       </div>
+      <Categories />
     </div>
   );
 }
